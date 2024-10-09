@@ -1,0 +1,98 @@
+* {        /*Configurações padrões de início de um projeto dentro do CSS  */
+    padding: 0;            
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+      display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+      align-items: center; /*Alinhar os itens do nosso Header para o centro*/
+      justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+      padding: 2%;  /* Cuida do Preenchimento */
+      background-color: rgb(56, 49, 49); /* Cor de fundo do nosso Cabeçalho/Header */
+      overflow: hidden; /* */
+}
+
+header >h1{
+    /* selecionamos a cor da letra do nosso h1 ou seja, do nosso titulo */
+    color: white; /* chamamos a propriedade color e definimos uma cor em questao */
+    font-size: 45px; /* Tamanho da letra */
+}
+
+header >img{
+    /* aqui estamos chamando a nossa imagem para ser atribuidas alteração */
+    width:11rem; /* Largura da nossa imagem */
+    height: auto;/* Tamanho da nossa imagem no tamanho automatico */
+}
+
+
+.item-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+    margin-right: 25px; /* margem da direita */
+}
+
+.item-menu-header > a:hover { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+    color: yellow; /* Aqui atribuimos uma cor */
+    transition: 1s; /* E o tempo em que será exibido ao passar o cursor */
+}
+
+
+.item-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+    color: white; /* Cor das letras */
+    text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
+    font-size: 12px; /* Tamanho da letra */
+} 
+
+.navbar {
+    display: flex;/* Flexiveis*/
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 1.5rem; /*  */
+    height: 2.6rem;
+}
+
+.nav-links{
+    list-style:none; /* retirando o estilo de lista */
+    margin: 0; /* zerando os epaçamento de margem que são habilitados por padrão */
+    padding:0; /* zerando os preenchimentos que são habilitados por padrão*/
+    display: flex;/* tornando a caixa flexivel, e lado a lado */
+}
+
+.nav-links li{
+    padding: 0 9px; /* preenchimento da li superior / inferior 0 e laterais em 9px*/
+}
+
+.nav-links a,
+.nav-links-mobile a { /* estamos chamando as duas ancora para estilização, tanto da versão desktop quanto da versão mobile*/
+    color: white; /* a cor da letra */
+    text-decoration: none; /* e sem sublinhado */
+}
+
+.mobile-menu {
+    display: none; /*display nenhum */
+    position: fixed;/* posição fixa na parte direita da pagina */
+    top: 0; /*  */
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 0%;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links-mobile li {
+    border-bottom: 1px solid #787272;
+    padding-bottom: 1.2rem;
+}
