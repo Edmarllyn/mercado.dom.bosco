@@ -8,90 +8,94 @@
     <script src="https://kit.fontawesome.com/5965870c94.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
+    <header>
 
-        <img src="img/tangirina.png" alt="">
-
-        <h1> EMPÓRIO DOM BOSCO</h1>
-
-    <nav class="navbar">
-            <ul class="nav-links">
-
-                <li class="item-menu-header">
-                    <a href="index.html">HOME</a>
-                </li>
-
-                <li class="item-menu-header">
-                    <a href="#featured-products">PRODUTOS</a>
-                </li>
-
-                <li class="item-menu-header">
-                    <a href="#contato"> CONTADO</a>
-                </li>
-
-                <li class="item-menu-header">
-                    <a href="#sobre-nós">SOBRE NÓS</a>
-                </li>
-
-            </ul>
+        <img src="img/tangirina.png" alt="ícone tangirina">
+    
+        <h1>EMPÓRIO DOM BOSCO</h1>
+    
         
-
-        <!-- Criamos nossa caixa (div) para guardar os elementos do Hamburguer quando estiver aberto -->
-        <div class="mobile-menu" id="mobilemenu">
-
-            <!-- Botão para ser ultilizado para fechamento da lista -->
-            <button id="clasebutton" class="clase">
-                <i class="fas fa-times"></i>
-            </button>
-
-            
-                <ul class="nav-links-mobile">
+        <nav class="navbar">
     
-                    <li>
-                        <a href="">TESTE</a>
-                    </li>
+          <!-- Criamos nossas Listas quando tiver em formato Desktop -->
+          <ul class="nav-links">
     
-                    <li>
-                        <a href="">TESTE</a>
-                    </li>
+            <li class="item-menu-header">
+              <a href="index.html">HOME</a>
+            </li>
     
-                    <li>
-                        <a href=""> TESTE</a>
-                    </li>
+            <li class="item-menu-header">
+              <a href="#featured-products">PRODUTOS</a>
+            </li>
     
-                </ul>
-
-                <div id="btn-mobile" class="cad-mobile">
-                    
-                    <button>
-                        <a href="form.html" target="_blank"> 
-
-                            <p>Cadastre-Se</p>
-                        </a>
-                    </button>
-                </div>
-                
-
-                <!-- botão de hamburguer, ele está fora da div justamente por ser um elemento singular -->
-
-                <button class="hamburguer" id="hamburguerbutton">
-                    <i class="fas fa-bars"></i>
+              <li class="item-menu-header">
+                <a href="#contatos">CONTATO</a>
+              </li>
+    
+              <li class="item-menu-header">
+                <a href="#sobre-nos">SOBRE NÓS</a>
+              </li>
+              
+          </ul>
+    
+    
+    
+          <!-- Criamos nossa caixa (DIV) para guardar os elementos do Hamburguer quando estiver aberto -->
+          <div class="mobile-menu" id="mobileMenu">
+    
+              <!-- Botão para ser utilizado para fechamento da lista -->
+              <button id="closeButton" class="close">
+                  <i class="fas fa-times"></i>
+              </button>
+    
+              <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+              <ul class="nav-links-mobile">
+                  <li>
+                      <a href="">TESTE</a>
+                  </li>
+                  <li>
+                      <a href="">TESTE</a>
+                  </li>
+                  <li>
+                      <a href="">TESTE</a>
+                  </li>
+              </ul>
+    
+    
+              <div id="btn-mobile" class="cad-mobile">
+                <button>
+                  <a href="form.html" target="_blank">
+          
+                    <!-- <img src="img/user.png" alt=""> -->
+          
+                    <p>Cadastre-se</p>
+                  </a>
                 </button>
-        </div>
-
-    </nav>
-
-    <div id="btn-header">
-        <button>
-            <a href="form.html" target="_blank">
-                <img src="img/user.png" alt="">
-
-                <p> Cadastre-Se </p>
-            </a>
-        </button>
-    </div>
+              </div>
+              <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+          </div>
     
-</header>
+          <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+        <button class="hamburger" id="hamburgerButton">
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Fim do Menu de Navegação -->
+      </nav>
+    
+    
+        <div id="btn-header">
+          <button>
+            <a href="form.html" target="_blank">
+    
+              <img src="img/user.png" alt="ícone usuário">
+    
+              <p>Cadastre-se</p>
+            </a>
+          </button>
+        </div>
+    
+      </header>
 
 <div id="img-destaque">
     <div class="img-padaria efeito-img-topo"></div>
@@ -138,52 +142,55 @@
 
         <h2> PRINCIPAIS</h2>
 
-        <div class="products">
-
-            <div class="">
-                <img src="img/muflin.jpg" alt="">
-
-                <h4 class="title-products"> Mufflin</h4>
-            </div>
-
-            <div class="">
-                <img src="img/croissant.jpeg" alt="">
-
-                <h4 class="title-products">Croissant</h4>
-            </div>
-        </div>
-
-        <div class="products">
-
-            <div class="">
-                <img src="img/bolo.jpg" alt="">
-
-                <h4 class="title-products">Bolo</h4>
-            </div>
-
-            <div class="">
-                <img src="img/bomba-chocolate.jpg" alt="">
-
-                <h4 class="title-products">Bomba Chocolate</h4>
-            </div>
-
-        </div>
-
-        <div class="products">
-
-            <div class="">
-                <img src="img/pao-de-metro.jpg" alt="">
-
-                <h4 class="title-products">Pão De Metro</h4>
-            </div>
-
-            <div class="">
-                <img src="img/beirute.png" alt="">
-
-                <h4 class="title-products">Beirute</h4>
-            </div>
-
-        </div>
+        <!-- Div pai -->
+      <div class="products">
+        <!-- Caixa MUFFLIN -->
+                <div>
+                  <img src="img/muflin.jpg" alt="ícone Mufflin" class="img-product" loading="lazy">
+                  <h4 class="title-products">Mufflin</h4>
+                </div>
+        <!-- Caixa Croissant -->
+                <div>
+                  <img src="img/croissant.jpeg" alt="ícone Croissant" class="img-product" loading="lazy">
+                  <h4 class="title-products">Croissant</h4>
+                </div>
+        
+              </div>
+        
+        
+        
+        <!-- Div Pai 2 -->
+              <div class="products">
+        <!-- Caixa Bolo -->
+                <div>
+                  <img src="img/bolo.jpg" alt="Imagem bolo" class="img-product" loading="lazy">
+                  <h4 class="title-products">Bolos</h4>
+                </div>
+        <!-- Caixa Bomba de Chocolate -->
+                <div>
+                  <img src="img/bomba-chocolate.jpg" alt="Imagem Bomba Chocolate" class="img-product" loading="lazy">
+                  <h4 class="title-products">Bomba de Chocolate</h4>
+                </div>
+        
+              </div>
+        
+        
+        
+        
+              <!-- Div Pai 3 -->
+              <div class="products">
+        <!-- Caixa Beirute -->
+                <div>
+                  <img src="img/beirute.png" alt="Imagem Beirute" class="img-product" loading="lazy">
+                  <h4 class="title-products">Beirute</h4>
+                </div>
+        <!-- Caixa Pão de Metro -->
+                <div>
+                  <img src="img/pao-de-metro.jpg" alt="Imagem Metro" class="img-product" loading="lazy">
+                  <h4 class="title-products">Pão de metro</h4>
+                </div>
+        
+              </div>
 
         <a href="produtos.html">
             Ver Tudo
